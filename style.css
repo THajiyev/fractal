@@ -1,0 +1,112 @@
+body {
+  text-align: center;
+  background-color:aliceblue;
+}
+
+button {
+  background-color: #00f400; 
+  height: 5vh; 
+  width: 10vw;
+}
+
+.centered-div {
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+}
+
+.counter {
+  font-size: 4em;
+}
+
+#canvas {
+  border:1px solid #d3d3d3
+}
+
+.regular-text {
+  font-size: 20px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  border:solid transparent; 
+  background-color:aliceblue;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  border:solid transparent; 
+  background-color:aliceblue;
+  width: 4ch;
+}
+
+input[type=range] {
+  width: 25vw;
+}
+  
+input[type=checkbox]{
+  -webkit-appearance: none;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+  
+input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+input[type=checkbox]:checked {
+  background: #56c080;
+}
+  
+input[type=checkbox]:checked:before {
+  transform: translate(100%);
+}
+
+@media (max-width: 1000px) {
+  button {
+    width: 200px;
+    height: 60px;
+  }
+  input[type=range] {
+    width: 40vw;
+    transform: scale(1,1.2);
+  }
+  .counter {
+    font-size: 6em;
+  }
+  input[type=checkbox]{
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+  }  
+  input[type=checkbox]:before {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+  }
+  .regular-text {
+    font-size: 30px;
+  }
+  .btn-primary{
+    font-size: 30px;
+  }
+  input[type=number] {
+    font-size: 2em;
+  }
+  .small-text{
+    font-size: 1.5em;
+  }
+}

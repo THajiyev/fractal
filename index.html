@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sierpinski Triangle Simulator</title>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<body>
+<label id="counter" class="counter">0</label>
+<br>
+<button class="btn btn-primary" id="addButton">Add</button>
+<br>
+<br>
+<div class="centered-div">
+<label class="regular-text">Automatic:</label>
+<input type="checkbox" id="chechbox">
+</div>
+<div class="centered-div">
+<input type="number" disabled>
+<input type="range" id="slider" min="1" max="100" value="1" oninput="inputResponse('slider','step')">
+<input type="number" id="step" oninput="inputResponse('step', 'slider')" value="1" max="100">
+</div>
+<label class="small-text">Increment or points per second</label>
+<br>
+<canvas id="canvas">Your browser does not support the canvas element.</canvas>
+</body>
+<script src="./script.js"></script>
+</html>
