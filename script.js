@@ -7,7 +7,7 @@ if(width>height){
     canvas.width = canvas.height*2/3**.5;
 }
 else{
-    canvas.width=.95*width;
+    canvas.width=.90*width;
     canvas.height=canvas.width*.5*3**.5;
 }
 canvas.height = canvas.height+space_constant*2;

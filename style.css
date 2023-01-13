@@ -20,7 +20,7 @@ button {
 }
 
 #canvas {
-  border:1px solid #d3d3d3
+  border:1px solid black
 }
 
 .regular-text {
@@ -75,38 +75,43 @@ input[type=checkbox]:checked:before {
   transform: translate(100%);
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   button {
-    width: 200px;
-    height: 60px;
+    width: 250px;
+    height: 75px;
+    font-size: 50px;
   }
   input[type=range] {
     width: 40vw;
     transform: scale(1,1.2);
   }
   .counter {
-    font-size: 6em;
+    font-size: 9em;
   }
   input[type=checkbox]{
-    width: 60px;
-    height: 30px;
-    border-radius: 15px;
+    width: 90px;
+    height: 45px;
+    border-radius: 22.5px;
   }  
   input[type=checkbox]:before {
-    height: 30px;
-    width: 30px;
-    border-radius: 15px;
+    height: 45px;
+    width: 45px;
+    border-radius: 22.5px;
   }
   .regular-text {
-    font-size: 30px;
-  }
-  .btn-primary{
-    font-size: 30px;
+    font-size: 45px;
   }
   input[type=number] {
-    font-size: 2em;
+    font-size: 3em;
   }
   .small-text{
-    font-size: 1.5em;
+    font-size: 25px;
+  }
+  .mobile-only {
+    display: block;
   }
 }
